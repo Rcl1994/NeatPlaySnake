@@ -1,0 +1,14 @@
+################Creacion del entorno y ejecucion################
+xhost +local:docker
+
+conda create -n NeatEnv
+conda activate NeatEnv
+
+conda install matplotlib
+conda install -c conda-forge pygame
+
+conda activate NeatEnv
+python main.py
+
+
+
